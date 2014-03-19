@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyText
+  subdomain: MyString
+  port: 1
+  state: false
+  root: MyString
+  ended: 2014-03-19 17:54:48
+  user_id: 
+
+two:
+  name: MyText
+  subdomain: MyString
+  port: 1
+  state: false
+  root: MyString
+  ended: 2014-03-19 17:54:48
+  user_id: 
