@@ -1,0 +1,39 @@
+<h1>Listing containers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Subdomain</th>
+      <th>Port</th>
+      <th>State</th>
+      <th>Root</th>
+      <th>Ended</th>
+      <th>User</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @containers.each do |container| %>
+      <tr>
+        <td><%= container.name %></td>
+        <td><%= container.subdomain %></td>
+        <td><%= container.port %></td>
+        <td><%= container.state %></td>
+        <td><%= container.root %></td>
+        <td><%= container.ended %></td>
+        <td><%= container.user %></td>
+        <td><%= link_to 'Show', container %></td>
+        <td><%= link_to 'Edit', edit_container_path(container) %></td>
+        <td><%= link_to 'Destroy', container, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Container', new_container_path %>
