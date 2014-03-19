@@ -1,4 +1,5 @@
 Gauntlet::Application.routes.draw do
+  get "landings/index"
   resources :containers
 
   resources :images
